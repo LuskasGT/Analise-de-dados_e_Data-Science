@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload de Arquivo Excel</title>
+</head>
+<body>
+    <h1>Envie o arquivo Excel para Análise</h1>
+    <form action="{% url 'upload' %}" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <label for="file">Escolha o arquivo Excel:</label>
+        <input type="file" name="file" id="file" accept=".xlsx" required>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
