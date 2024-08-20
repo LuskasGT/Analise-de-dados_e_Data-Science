@@ -1,3 +1,7 @@
+.banner {
+  background-color: rgb(4, 14, 37);
+}
+
 .banner img {
   max-width: 73%;
   height: auto;
@@ -5,7 +9,97 @@
   margin: 0 auto;
 }
 
-.banner {
-  background-color: rgb(4, 14, 37);
+.titulo{
+  color: aliceblue;
+  position: absolute;
+  left: 10%;
+  top: 30%;
 }
+
+.titulo button{
+  top: 120%;
+  position: absolute;
+
+  padding: 10px;
+  border-radius: 15px;
+  color: aliceblue;
+  background-color: #D36135;
+  font-weight: bold;
+  border-color: black ;
+  box-shadow: 4px 4px 20px black;
+}
+
+
+
+@media (max-width: 767px) {
+  .banner{
+    height: 50vh; 
+    width: 95% !important;
+    background-color: rgb(4, 14, 37) !important;
+  }
+  .banner img{
+    height: 50vh; 
+    zoom: 0.95;
+    background-color: rgb(4, 14, 37) !important;
+  }
+
+
+  .titulo{
+    position: absolute;
+    left: 10%;
+    top: 25%;
+  }
+
+  .titulo h3{
+    font-size: 20px;
+  }
+
+  .titulo p{
+    font-size: 12px;
+  }
+
+  .titulo button {
+    top: 90%;
+    position: absolute;
+    font-size: 12px;
+    padding: 6px;
+  }
+
+
+}
+
+
+@media (min-width: 768px) and (max-width: 1200px ){
+  .banner{
+    height: 50vh; 
+    width: 90% !important;
+  }
+  .banner img{
+    height: 50vh; 
+    zoom: 0.9;
+  }
+
+
+  .titulo{
+    position: absolute;
+    left: 10%;
+    top: 25%;
+  }
+
+  .titulo h3{
+    font-size: 20px;
+  }
+
+  .titulo p{
+    font-size: 12px;
+  }
+
+  .titulo button {
+    top: 90%;
+    position: absolute;
+    font-size: 12px;
+    padding: 6px;
+  }
+}
+
 
